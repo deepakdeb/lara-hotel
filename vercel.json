@@ -10,6 +10,12 @@
             "dest": "/api/index.php"
         }
     ],
+    "builds": [
+        {
+            "src": "api/index.php",
+            "use": "@vercel/php"
+        }
+    ],
     "build": {
         "env": {
             "LD_LIBRARY_PATH": "/usr/local/lib:/usr/lib:/lib"
